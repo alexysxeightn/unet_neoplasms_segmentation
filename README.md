@@ -78,7 +78,6 @@ UNET(
 
 Модель обучалась на датасете [PH2Dataset](https://www.kaggle.com/datasets/kanametov/ph2dataset) c использованием аугментаций:
 ```
-Resize(256, 256)
 HorizontalFlip(p=0.5)
 VerticalFlip(p=0.5)
 RandomRotate90(p=0.5)
