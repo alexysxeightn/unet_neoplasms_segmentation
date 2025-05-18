@@ -2,7 +2,7 @@
 
 Простой веб-сервис для сегментации новообразований с использованием модели U-NET, реализованной на `PyTorch`, и интерфейса на `Streamlit`. Позволяет загружать одно или несколько изображений (включая формат `.bmp`), применять модель и отображать результаты с нанесённой маской.
 
-Модель обучалась на датасете ![PH2Dataset](https://www.kaggle.com/datasets/kanametov/ph2dataset)
+Модель обучалась на датасете [PH2Dataset](https://www.kaggle.com/datasets/kanametov/ph2dataset)
 
 ## Структура проекта
 
@@ -49,7 +49,7 @@ streamlit run app.py
 
 Для выбора лучшей модели в качестве метрики использовалось среднее `IoU` - степень пересечения между предсказанной маской и истинной маской (ground truth):
 $$
-IoU = \frac{Пересечение (TP)}{Объединение (TP + FP + FN)}
+IoU = \\frac{Пересечение (TP)}{Объединение (TP + FP + FN)}
 $$
 - `TP (True Positive)` — пиксели, правильно классифицированные как объект.
 - `FP (False Positive)` — пиксели, ошибочно отнесённые к объекту.
@@ -75,4 +75,4 @@ UNET(
 - `out_channels`: 1 (бинарная маска)
 - `features`: количество фильтров на каждом уровне энкодера
 
-Подробно архитектура модели разобрана в статье ![U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+Подробно архитектура модели разобрана в статье [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
