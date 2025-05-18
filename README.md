@@ -28,12 +28,14 @@ cd unet_neoplasms_segmentation
 pip install -r requirements.txt
 ```
 
-3. Запустить приложение
+3. Запустить приложение (находится на `localhost:8501`)
 ```
 streamlit run app.py
 ```
 
 ## Как использовать
+
+![ezgif-12e26ea0358783](https://github.com/user-attachments/assets/47908a6e-aceb-4fdc-9a91-52900c2cf3b7)
 
 1. Загрузите одно или несколько изображений (можно зажать Ctrl/Cmd для множественного выбора).
 2. Нажмите кнопку "Выполнить сегментацию".
